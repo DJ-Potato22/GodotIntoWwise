@@ -1,0 +1,45 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="New Game Project"
+run/main_scene="uid://bncu4ea62oqd"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+WwiseRuntimeManager="*uid://ctej5m3wi36b3"
+AudioManger="*uid://ukq0ixau7rey"
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+
+[wwise]
+
+output/panning_rule.android="Headphones"
+output/panning_rule.ios="Headphones"
+output/enable_auto_panning_rule.ios=true
+integration/root_output_path="res://Wwise/Wwise_ImportantFolder/GeneratedSoundBanks"
+project/windows_platform_info="res://Wwise/resources/Windows.tres"
+project/mac_platform_info="res://Wwise/resources/Mac.tres"
+project/web_platform_info="res://Wwise/resources/Web.tres"
+stream_manager/use_subfoldering=true

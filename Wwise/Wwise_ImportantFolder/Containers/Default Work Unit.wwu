@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{39D31565-B519-458F-976E-5D5542A539CB}" SchemaVersion="137">
+	<Containers>
+		<WorkUnit Name="Default Work Unit" ID="{39D31565-B519-458F-976E-5D5542A539CB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Click" ID="{BAE7819D-3E45-4752-B2FF-985B09602FAF}" ShortID="142325198">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{A7AC53AB-DA44-4F3C-8297-69CDA70452D6}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="300"/>
+											<Property Name="Min" Type="Real64" Value="-300"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{66221850-D41F-4382-A067-0A6BC53E6DB3}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="1"/>
+											<Property Name="Min" Type="Real64" Value="-2"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D011C5B9-0BB1-4CC9-BC5C-4EA968245EB0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B9A9CE95-605F-45FC-8D5F-C47ABF2BC89D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="UI_Press" ID="{6ED2BB82-F54A-41F9-AEB1-9F9BE5DEBCFE}">
+							<Language>SFX</Language>
+							<AudioFile>UI_Press.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1014444921"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="UI_Press" ID="{6ED2BB82-F54A-41F9-AEB1-9F9BE5DEBCFE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>
